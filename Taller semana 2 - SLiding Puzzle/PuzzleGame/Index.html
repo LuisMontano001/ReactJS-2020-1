@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Puzzle Selvatico</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <link rel="stylesheet" href="EstiloPuzzle.css">
+    <script src="PuzzleReact.js"></script>
+</head>
+
+<body>  
+    <div class="tittle">
+         <h1>Puzzle Selvatico: Pantera</h1>
+         <h2>Resuelve el rompecabezas con la menor cantidad de movimientos, Suerte!</h2>
+        </div>
+    <div class="tablero" style="display: table ">
+        <div class="row1" style="display: table-row;">
+            <div class="p1" id="img1" onclick="move(1)">                
+            </div>
+            <div class="p2" id="img2" onclick="move(2)">                
+            </div>
+            <div class="p3" id="img3" onclick="move(3)">                
+            </div>
+        </div>
+        <div class="row2" style="display: table-row;">
+            <div class="p4" id="img4" onclick="move(4)">            
+            </div>
+            <div class="p5" id="img5" onclick="move(5)">                
+            </div>
+            <div class="p6" id="img6" onclick="move(6)">            
+            </div>
+        </div>
+        <div class="row3" style="display: table-row;">
+            <div class="p7" id="img7" onclick="move(7)">                
+            </div>
+            <div class="p8" id="img8" onclick="move(8)">                
+            </div>
+            <div class="p9" id="img9" onclick="move(9)">                  
+            </div>
+        </div>        
+    </div>
+    <button class="shuffle" onclick="shuffle()">Revolver Fichas</button>
+    <h1 class="movements">Cantidad de Movimientos:</h1> <h1 class="numMovimientos">0</h1>
+</body>
+
+</html>

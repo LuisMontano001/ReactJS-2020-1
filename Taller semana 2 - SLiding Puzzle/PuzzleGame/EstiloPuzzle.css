@@ -1,0 +1,86 @@
+body{
+    align-items: center;
+    background-image: url("background.jpg");
+}
+div.tittle{
+    background:greenyellow;
+    border-style: solid;
+    border-radius: 5px;
+    margin: auto;
+    position: center;
+    width: 500px;
+    vertical-align: center;
+    text-align: center;
+}
+.tablero{   
+    display: inline-block;
+    float: left;
+    padding: 0px;   
+    background-repeat: no-repeat;
+    margin-left: 10%;
+    margin-top: 5%;    
+    background-color: greenyellow;
+}
+.shuffle{
+    display: inline-block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: green;
+    border-radius: 10%;
+    width: 100px;
+    height: 50px;
+    margin-top: 200px;                 
+    cursor: pointer;  
+    margin-left: 80px;      
+}
+.movements{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;             
+    right: 150px;
+    padding-left: 10%;
+    display: inline;
+    color: white;
+}
+.numMovimientos{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;            
+    bottom: 400px;    
+    display: inline; 
+    color: white;      
+}
+.p1, .p2, .p3, .p4, .p5, .p6, .p7, .p8,.p9{
+    display: table-cell;
+    width: 170px;
+    height: 170px;
+    border: 1px solid white;    
+    cursor: pointer;
+    background-size: 102%;
+    background-repeat: no-repeat;
+        
+  }
+  
+.p1{
+    background-image: url('fila-1-col-1.jpg') 
+}
+    
+.p2{    
+    background-image: url('fila-1-col-2.jpg')    
+}
+.p3{    
+    background-image: url('fila-1-col-3.jpg')
+}
+.p4{    
+    background-image: url('fila-2-col-1.jpg')
+}
+.p5{    
+    background-image: url('fila-2-col-2.jpg')    
+}
+.p6{    
+    background-image: url('fila-2-col-3.jpg')    
+}
+.p7{    
+    background-image: url('fila-3-col-1.jpg')    
+}
+.p8{    
+    background-image: url('fila-3-col-2.jpg')     
+}
+.p9{
+    background-color: greenyellow;
+}
