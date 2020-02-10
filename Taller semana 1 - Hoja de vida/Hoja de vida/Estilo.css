@@ -1,0 +1,78 @@
+*{
+    align-items: center;
+    text-align: center;
+}
+body{
+    background-image: url("Imagenes/Fondo.jpg");
+}
+
+div.Completo{
+    background-color: white;
+    margin-left: 15%;
+    margin-right: 15%;
+    border-radius: 15px;
+}
+
+div.DatosPersonalesContainer{
+    background-color: white;
+    padding: 0px;
+    height: 20px;
+    display: inline-block;
+}
+
+div.Foto{
+    padding: 20px;
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+div.Descripcion{
+    background-color: white;
+    padding: 8px;
+    margin-top: 15px;
+    margin-left: 15%;
+    margin-right: 15%;
+    border-radius: 15px;
+}
+
+div.Izquierda{
+    background-color: white;
+    padding: 8px;
+    margin-left: 15%;
+    margin-right: 51%;
+    border-radius: 15px;
+    
+}
+
+
+div.Derecha{
+    background-color: white;
+    padding: 8px;
+    margin-left: 51%;
+    margin-right: 15%;
+    border-radius: 15px;
+    
+}
+
+h1{
+    position: center;
+    
+    color: white;
+}
+
+h2{
+    color: white;
+}
+
+li{
+    text-align: left;
+}
+
+
+
