@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Puzzle</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <link rel="stylesheet" href="puzzleStyle.css">
+    <script src="puzzleJavaScript.js"></script>
+    </head>
+
+<body> 
+    <div class="Titulo">
+    <h1>Puzzle Ed, Ed y Eddy</h1> 
+    </div>    
+    <div class="central" style="display: table ">
+        <div class="row1" style="display: table-row;">
+            <div class="imagen1" id="img1" onclick="moverCasillas(1)">                
+            </div>
+            <div class="imagen2" id="img2" onclick="moverCasillas(2)">                
+            </div>
+            <div class="imagen3" id="img3" onclick="moverCasillas(3)">                
+            </div>
+        </div>
+        <div class="row2" style="display: table-row;">
+            <div class="imagen4" id="img4" onclick="moverCasillas(4)">            
+            </div>
+            <div class="imagen5" id="img5" onclick="moverCasillas(5)">                
+            </div>
+            <div class="imagen6" id="img6" onclick="moverCasillas(6)">            
+            </div>
+        </div>
+        <div class="row3" style="display: table-row;">
+            <div class="imagen7" id="img7" onclick="moverCasillas(7)">                
+            </div>
+            <div class="imagen8" id="img8" onclick="moverCasillas(8)">                
+            </div>
+            <div class="imagen9" id="img9" onclick="moverCasillas(9)">                  
+            </div>
+        </div>        
+    </div>
+    <button class="Revolver" onclick="Revolver()">
+        Revolver
+    </button>
+    <div class="PM">
+    <h1 class="Movimientos">Movimientos:</h1> <h1 class="Numeros">0</h1>
+    </div>
+</body>
+
+</html>
