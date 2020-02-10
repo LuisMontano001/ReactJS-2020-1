@@ -1,0 +1,77 @@
+body{
+    align-items: center;
+    background-image: url("img/fondo1.png");
+}
+
+h1, h2{
+text-align: center;    
+color: white;
+margin-top:5%;
+}
+
+h2{
+    margin-top:15%
+}
+.cuadricula{   
+    
+    padding: 0px;
+    background-repeat: no-repeat;
+    margin-top: 5%; 
+    margin-left: 30%;
+    margin-right: 30%;   
+    width: 40%;
+    height: 40%;
+}
+
+.b1, .b2, .b3, .b4, .b5, .b6, .b7, .b8,.b9{
+    display: table-cell;
+    width: 120px;
+    height: 100px;
+    border: 2px Solid rgb(70, 10, 10);
+    cursor: pointer;
+    background-size: 102%;
+ 
+        
+  }
+  
+.reset {
+    background-color: rgb(42, 131, 24);
+    border: 2px Solid white;
+    width: 200px;
+    height: 50px;
+    margin-top: 5%;                  
+    margin-left: 43%; 
+    cursor: pointer;     
+}
+
+
+  
+.b1{
+    background-image: url('img/fila-1-col-1.jpg') 
+}
+    
+.b2{    
+    background-image: url('img/fila-1-col-2.jpg')    
+}
+.b3{    
+    background-image: url('img/fila-1-col-3.jpg')
+}
+.b4{    
+    background-image: url('img/fila-2-col-1.jpg')
+}
+.b5{    
+    background-image: url('img/fila-2-col-2.jpg')    
+}
+.b6{    
+    background-image: url('img/fila-2-col-3.jpg')    
+}
+.b7{    
+    background-image: url('img/fila-3-col-1.jpg')    
+}
+.b8{    
+    background-image: url('img/fila-3-col-2.jpg')     
+}
+.b9{
+    background-color: black;
+    opacity: 0.9;
+}
