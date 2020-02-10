@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 970px;
+  height: 1100px;
+  margin: auto;
+  padding: 0;
+}
+
+#div1 {
+  background-color: red;
+  width: 300px;
+  height: 350px;
+  background-image: url(../img/image_part_001.jpg);
+}
+#div2 {
+  background-color: blue;
+  width: 300px;
+  height: 350px;
+  background-image: url(../img/image_part_002.jpg);
+}
+#div3 {
+  background-color: green;
+  width: 300px;
+  height: 350px;
+  background-image: url(../img/image_part_003.jpg);
+}
+#div4 {
+  background-color: gray;
+  width: 300px;
+  height: 350px;
+  background-image: url(../img/image_part_004.jpg);
+}
+#div5 {
+  background-color: pink;
+  width: 300px;
+  height: 350px;
+  background-image: url(../img/image_part_005.jpg);
+}
+#div6 {
+  background-color: cyan;
+  width: 300px;
+  height: 350px;
+  background-image: url(../img/image_part_006.jpg);
+}
+#div7 {
+  background-color: purple;
+  width: 300px;
+  height: 350px;
+  background-image: url(../img/image_part_007.jpg);
+}
+#div8 {
+  background-color: orange;
+  width: 300px;
+  height: 350px;
+  background-image: url(../img/image_part_008.jpg);
+}
+#div9 {
+  background-color: coral;
+  width: 300px;
+  height: 350px;
+  opacity: 0.1;
+  background-image: url(../img/image_part_009.jpg);
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 250px;
+  height: 50px;
+  background-color: #192965;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3em;
+}
