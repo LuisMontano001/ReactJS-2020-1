@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.principal{
+    width: 100%;
+    height: 400px;
+    background-color: #EEF6FF;
+}
+.center{
+   margin: 0 auto 0 auto; /** top, left, bottom, right, auto quiere decir que divide en la misma cantidad en lo que se le indique, si ambos son auto se centra**/ 
+}
+.caption{
+    width: 400px;
+    height: 250px;
+    padding-top: 50px;
+}
+.profile-picture{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.text-center{
+    text-align: center;
+}
+.title{
+    font-size: 3em;
+    font-weight: 100;
+}
+.name{
+    font-size: 2em;
+    font-weight: 100;
+}
+.container{
+    width: 100%;
+    height: 400px;
+    display: flex;
+}
+.block{
+    flex-grow: 1;
+    width: 50%;
+    height: 100%;
+}
+.personal-data{
+    padding: 50px;
+}
+.subtitle{
+    margin: 10px;
+    text-align: center;
+}
+.text-justify{
+    text-align: justify;
+}
+.image{
+    width: 100%;
+    height: 100%;
+}
+.personal-xp{
+    padding: 50px;
+    background-color: #EEF6FF;
+    color: #777B80;
+}
+.blue{
+    color: #506680;
+}

@@ -1,0 +1,76 @@
+*{
+    background-color: darkcyan;
+}
+.center{
+    height: 100vh;
+    width: 100vw;
+}
+.title{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+.start{
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 200px;
+    background-color: rgb(187, 187, 187);
+}
+div.tablero{
+    margin-left: 30%;
+    position: absolute;
+    height: 600px;
+    width: 600px;
+    border:solid black 2px
+}
+table{
+    height: 100%;
+    width: 100%;
+}
+th{
+width: 33%;
+height: 33%;
+border: solid black 2px;
+}
+
+th.cuadro1{
+ background-image: url('./img/wolf.jpg');
+ background-position: top left;
+
+}
+th.cuadro2{
+ background-image: url('./img/wolf.jpg');
+ background-position: top center;
+
+}
+th.cuadro3{
+ background-image: url('./img/wolf.jpg');
+ background-position: top right;
+
+}
+th.cuadro4{
+ background-image: url('./img/wolf.jpg');
+ background-position: center left;
+
+}
+th.cuadro5{
+ background-image: url('./img/wolf.jpg');
+ background-position: center center;
+
+}
+th.cuadro6{
+ background-image: url('./img/wolf.jpg');
+ background-position: center right;
+
+}
+th.cuadro7{
+ background-image: url('./img/wolf.jpg');
+ background-position: bottom left;
+
+}
+th.cuadro8{
+ background-image: url('./img/wolf.jpg');
+ background-position: bottom center;
+
+}
+
+
+
