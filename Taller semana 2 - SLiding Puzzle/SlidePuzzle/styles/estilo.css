@@ -1,0 +1,21 @@
+* {
+  background-color: gray;
+}
+
+body {
+  text-align: center;
+}
+
+img {
+  height: 300px;
+  width: 300px;
+}
+
+.tabla {
+  align-content: center;
+  border: 8px solid;
+}
+
+.cont {
+  display: inline-flex;
+}

@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.top {
+  width: 100%;
+  height: 100%;
+  max-height: 200px;
+  background-color: #ff7912;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 4px solid;
+}
+
+.img {
+  margin: auto;
+  border-left: 8px double;
+  border-right: 8px double;
+}
+
+#img {
+  width: 180px;
+  height: 200px;
+}
+
+.titulo {
+  margin: auto;
+  text-align: center;
+  font-size: 160%;
+}
+
+.info {
+  margin: auto;
+  font-size: 150%;
+  border-left: 4px dashed;
+  padding-left: 2%;
+}
+
+.bot {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-image: url("https://webgradients.com/public/webgradients_png/036%20Zeus%20Miracle.png");
+  padding-bottom: 20px;
+}
+
+.leg {
+  font-size: 250%;
+  text-align: center;
+  padding: 2%;
+  border: 2px solid;
+  font-weight: bold;
+  background-color: #ffd4b3;
+}
+
+h3 {
+  font-size: 200%;
+  text-align: center;
+}
+
+.txt {
+  font-size: 150%;
+  text-align: center;
+}
+
+.fs {
+  padding: 6%;
+  margin: 5%;
+  background-color: #ffd4b3;
+  border: 4px solid;
+}
+
+#apt {
+  margin-left: 12%;
+}
+
+#lst {
+  font-weight: bold;
+}
