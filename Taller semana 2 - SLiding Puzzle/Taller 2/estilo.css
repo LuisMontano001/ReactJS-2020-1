@@ -1,0 +1,90 @@
+BODY { 
+    background: #AAAAAA;
+    }
+    
+    .imagen1 {
+      display: table-cell;
+      width: 150px;
+      height: 150px;
+      border: 1px solid white;
+      background: url(https://www.euroresidentes.com/hogar/decoracion/wp-content/uploads/sites/6/2014/06/casa-antigua-euroresidentes.jpg) ;
+      cursor: pointer;
+    }
+    .imagen2 {
+      display: table-cell;
+      width: 150px;
+      height: 150px;
+      border: 1px solid white;
+      background: url(https://www.euroresidentes.com/hogar/decoracion/wp-content/uploads/sites/6/2014/06/casa-antigua-euroresidentes.jpg) ;
+      cursor: pointer;
+    }
+
+    .imagen3 {
+      display: table-cell;
+      width: 150px;
+      height: 150px;
+      border: 1px solid white;
+      background: url(https://www.euroresidentes.com/hogar/decoracion/wp-content/uploads/sites/6/2014/06/casa-antigua-euroresidentes.jpg) ;
+      cursor: pointer;
+    }
+    .imagen4 {
+      display: table-cell;
+      width: 150px;
+      height: 150px;
+      border: 1px solid white;
+      background: url(https://www.euroresidentes.com/hogar/decoracion/wp-content/uploads/sites/6/2014/06/casa-antigua-euroresidentes.jpg) ;
+      cursor: pointer;
+    }
+    .imagen5 {
+      display: table-cell;
+      width: 150px;
+      height: 150px;
+      border: 1px solid white;
+      background: url(https://www.euroresidentes.com/hogar/decoracion/wp-content/uploads/sites/6/2014/06/casa-antigua-euroresidentes.jpg) ;
+      cursor: pointer;
+    }
+    .imagen6 {
+      display: table-cell;
+      width: 150px;
+      height: 150px;
+      border: 1px solid white;
+      background: url(https://www.euroresidentes.com/hogar/decoracion/wp-content/uploads/sites/6/2014/06/casa-antigua-euroresidentes.jpg) ;
+      cursor: pointer;
+    }
+    .imagen7 {
+      display: table-cell;
+      width: 150px;
+      height: 150px;
+      border: 1px solid white;
+      background: url(https://www.euroresidentes.com/hogar/decoracion/wp-content/uploads/sites/6/2014/06/casa-antigua-euroresidentes.jpg) ;
+      cursor: pointer;
+    }
+    .imagen8 {
+      display: table-cell;
+      width: 150px;
+      height: 150px;
+      border: 1px solid white;
+      background: url(https://www.euroresidentes.com/hogar/decoracion/wp-content/uploads/sites/6/2014/06/casa-antigua-euroresidentes.jpg) ;
+      cursor: pointer;
+    }
+    .imagen9 {
+      display: table-cell;
+      width: 150px;
+      height: 150px;
+      border: 1px solid white;
+      background: url(https://www.euroresidentes.com/hogar/decoracion/wp-content/uploads/sites/6/2014/06/casa-antigua-euroresidentes.jpg) ;
+      cursor: pointer;
+    }
+
+    
+    .imagen1 {background-position: left top;}
+    .imagen2 {background-position: center top;}
+    .imagen3 {background-position: right top;}
+    .imagen4 {background-position: left center;}
+    .imagen5 {background-position: center center;}
+    .imagen6 {background-position: right center;}
+    .imagen7 {background-position: left bottom;}
+    .imagen8 {background-position: center bottom;}
+    .imagen9 {background: white; cursor: default;}
+
+    
