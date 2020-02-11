@@ -1,0 +1,34 @@
+ body {
+  background-color: White;
+
+}
+
+h1 {
+  color: Black;
+  text-align: center;
+  border:2px solid Tomato;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+} 
+.contacto{
+ width: 300px;
+  border: 10px solid green;
+  padding: 50px;
+  margin: 20px;
+width:245px; 
+background:white; 
+float:left;
+}
+.ubicacion{
+ width: 300px;
+  border: 10px solid green;
+  padding: 50px;
+  margin: 20px;
+width:245px; 
+background:white; 
+
+
+}
