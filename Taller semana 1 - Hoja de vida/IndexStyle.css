@@ -1,0 +1,97 @@
+*{
+    margin:0px;
+    border:0px;
+    padding:0px;
+}
+h1{
+    color: #426e9d;
+}
+#mainDiv{
+    margin-top: 0px;
+    background-color: #d8f3e8;
+}
+div{
+    margin-top: 5px;
+    width: 100%;
+    height: 100%;
+    border-style:solid;
+    border-width: 1px;
+    border-color:  #a3f0d1;
+    border-radius: 10px; 
+}
+
+#contentDiv{
+    background-color: #ffffff;
+    width: 70vw;
+    min-width: 800px;
+    margin-left:auto;
+    margin-right: auto;
+    border: 1px;
+    padding: 2%;
+}
+#headerDiv {
+    position: relative;
+    width:100%;
+    margin:10px;
+}
+#headerDiv h1{
+    font-size: 64px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+#pictureDiv{
+    position: relative;
+    width:20%;
+    margin-left:25%;
+    float:left;
+    border:1px; 
+    border-color:  #a3f0d1;
+    border-radius: 10px;
+}
+#pictureDiv, #contactDiv{
+    height:auto;
+}
+#contactDiv{
+    position:relative;
+    width:30%;  
+    height:100%;
+    margin-right: 15%;
+    float: left;
+    margin-left: 5%;
+    
+}
+#contactDiv {
+    color: #80abd1;
+
+}
+#andresPic{
+    position: relative;
+    
+    width: 100%;
+    height: 100%;
+}
+#skillsDiv{
+    clear: both;
+}
+#skillsDiv ul{
+    list-style-type: circle;
+}
+h3{
+    color: #348cea;
+}
+h4{
+    color: #5a5a8b;
+    margin-left: 2%;
+}
+p{
+    color: #5a5a5b;
+    margin-left: 5%;
+    margin-right: 2%;
+}
+li{
+    color: #5a5a5b;
+    margin-left: 5%;
+    margin-right: 2%;
+}
+
