@@ -1,0 +1,57 @@
+*{
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+div.todo{
+  border: solid 1px;
+  background-color: #ADD8E6;
+}
+div.datos{
+  position:relative;
+  top:;
+  left:940px;
+  right:;
+  bottom:;
+  font-size: 20px;
+  margin-top: 40px;
+}
+div.perfil{
+  position:relative;
+  top:;
+  left:;
+  right:;
+  bottom:;
+  font-size: 20px;
+}
+div.Habilidades{
+  position:relative;
+  font-size: 20px;
+}
+legend{
+  font-weight: bold;
+}
+div.Formacion{
+  position:relative;
+  top:;
+  left:;
+  right:;
+  font-size: 20px;
+}
+.Referencias{
+  position:relative;
+  top:;
+  right:;
+  margin-bottom: 40px;
+}
+img{
+  position:absolute;
+  margin-top: 40px;
+  margin-left: 80px;
+}
+table,td{
+  border: 1px solid black;
+}
+p.espacio{
+  background-color: grey;
+}

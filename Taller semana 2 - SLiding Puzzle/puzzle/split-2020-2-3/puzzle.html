@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <title>Slide Pacman Puzzle</title>
+  </head>
+
+  <body>
+    <h1>Pacman Puzzle</h1>
+
+
+<div style=" padding-top:0px; text-align:center; width:50% padding-top:0px">
+<div style="margin:auto">
+
+  <table class="juego">
+    <tbody>
+      <tr>
+<td onclick="movedown('9')"><img src="pac9.jpg" id="9" width="100" height="100"></td>
+<td onclick="movedown('8')"><img src="pac8.jpg" id="8" width="100" height="100"></td>
+<td onclick="movedown('7')"><img src="pac7.jpg" id="7" width="100" height="100"></td>
+</div>
+</tr>
+<div>
+  <tr>
+<td onclick="movedown('6')"><img src="pac6.jpg" id="6" width="100" height="100"></td>
+<td onclick="movedown('5')"><img src="pac5.jpg" id="5" width="100" height="100"></td>
+<td onclick="movedown('4')"><img src="pac4.jpg" id="4" width="100" height="100"></td>
+</div>
+</tr>
+<tr>
+<td onclick="movedown('3')"><img src="pac3.jpg" id="3" width="100" height="100"></td>
+<td onclick="movedown('2')"><img src="pac2.jpg" id="2" width="100" height="100"></td>
+<td onclick="movedown('1')"><img src="pac1.jpg" id="1" width="100" height="100"></td>
+</div>
+</tr>
+</div>
+</div>
+</tbody>
+</table>
+<script>
+var temp = "1";
+
+
+function movedown(id) {
+  console.log(temp);
+  console.log(id);
+  var pac1 = document.getElementById(id);
+  var pacx = document.getElementById(temp);
+
+  if(id == (parseInt(temp, 10) + 3) || id == (parseInt(temp, 10)-3) || (id == (parseInt(temp, 10)-1) && temp != 4 && temp != 7) || id == (parseInt(temp, 10)+1) && temp != 6 && temp != 9){
+    downSRC = pac1.src;
+    upSRC = pacx.src;
+    temp = id;
+    pacx.src = downSRC;
+    pac1.src = upSRC;
+  }
+
+}
+
+function moveleft() {
+
+}
+
+function moveright() {
+  var pospac9 = document.getElementById('pac9');
+  var posicion = elemento.getBoundingClientRect();
+  var posxbef = posicion.top;
+  var posybef = posicion.moveleft;
+
+}
+
+</script>
+  </body>
+</html>
