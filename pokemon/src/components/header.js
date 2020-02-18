@@ -17,13 +17,10 @@ export default class Header extends React.Component{
                         <a href="#">Pokedex</a>
                     </li>
                     <li>
-                        <a href="#">Pokedex</a>
+                        <a href="#">Comparar</a>
                     </li>
                     <li>
-                        <a href="#">Pokedex</a>
-                    </li>
-                    <li>
-                        <a href="#">Pokedex</a>
+                        <a href="#">Historia</a>
                     </li>
                 </ul>
             </header>

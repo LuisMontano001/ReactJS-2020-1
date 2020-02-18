@@ -77,3 +77,43 @@ background-color: white;
   background-color: #b97fc9;
   color: white;
 }
+
+.battle{
+  background-image: url(./images/battle.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  display: flex;
+  margin: 1em auto;
+  padding: 1em;
+  justify-content: space-around;
+}
+.values{
+  padding: 1em;
+  font-family: Flexo;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: white;
+  background-color: rgba(0,0,0, 0.4);
+  margin: 1em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 5px;
+
+}
+
+.history-part{
+  width: 80%;
+  margin: 1em auto;
+  padding: 1em;
+  background-color: white;
+  border-radius: 5px;
+}
+.history-part h2{
+  font-family: Flexo;
+  color: cadetblue;
+}
+.history-part p{
+  font-family: Arial, Helvetica, sans-serif;
+}
