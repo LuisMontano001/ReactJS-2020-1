@@ -1,31 +1,30 @@
 import React, { Component } from 'react'
 import "./BodyPage.css";
-import Product from "../../Assets/img/CarpetaGancho.jpg";
+import Product from "../Product/Product"
 export default class BodyPage extends Component {
+    state= {
+        products:[
+            {name: 'Carpeta legajadora', description: 'Carpeta legajadora oficio', picture: require('../../Assets/img/Carpeta.jpg')},
+            {name: 'Gancho Legajador', description: 'Gancho legajador 10mm', picture: require('../../Assets/img/Gancho.jpg')},
+            
+        ]
+    }
     render() {
         return (
-            <div className="container">
-                <div className="block">
-                    <div class="Inventory">
-                        <h2 className="subtitle">Productos en inventario</h2>
-                        <p className="text-justify">
-                            <ul>
-                                <li>
-                                    Gancho legajador 13 cm
-                        </li>
-                                <li>
-                                    Gancho legajador 18 cm
-                        </li>
-                                <li>
-                                    Carpetas plastificadas tamaño carta
-                        </li>
-
-                            </ul>
-                        </p>
+            <div className="mainContainer">
+                <div className="pageContent">
+                        <div>
+                        <h2 className="subtitle">PRODUCTOS EN INVENTARIO</h2>
+                            {this.state.products.map((p,index)=>
+                            
+                            <Product props={p} key={index}></Product>
+                        
+                            )}
+                        </div>
+                    <div className="inventoryContainer">
+                       
+                        
                     </div>
-                </div>
-                <div className="block">
-                    <img src={Product} className="image" />
                 </div>
             </div>
         )

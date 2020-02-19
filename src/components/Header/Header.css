@@ -1,24 +1,22 @@
-.principal{
-    width: 100%;
-    height: 400px;
-    background-color: #EEF6FF;
+
+.companyPic{
+    max-width: 200px;
+    max-height: 200px;
+    width: 5vw;
+    height: 5vw;
+    float: left;    
 }
-.center{
-   margin: 0 auto 0 auto; /** top, left, bottom, right, auto quiere decir que divide en la misma cantidad en lo que se le indique, si ambos son auto se centra**/ 
+.title{
+    max-height: 200px;
+    width: 5vw;
+    float: left;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
 }
-.caption{
-    width: 400px;
-    height: 250px;
-    padding-top: 50px;
-}
-.text-center{
-    text-align: center;
-}
-.blue{
-    color: #506680;
-}
-.Logo{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+
+.topVar{
+    height: 5vw;
+    width: 100vw;
+    background-color: cadetblue;
 }
