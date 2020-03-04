@@ -1,0 +1,122 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #f6f6f6;
+}
+
+.header{
+  width: 100%;
+  height: 90px;
+display: flex;
+background-color: white;
+}
+
+.header-logo{
+  width: 30%;
+  text-align: center;
+}
+.header-logo img{
+  height: 100%;
+}
+.header-navbar{
+  width: 60%;
+}
+.header-navbar li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 1em;
+  line-height: 90px;
+}
+.header-navbar li a{
+  text-decoration: none;
+  color: black;
+}
+.content{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: Flexo;
+}
+
+.pokemon-card{
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.13);
+  border-radius: 10px;
+  margin: 1em;
+  background-color: white;
+}
+.pokemon-card-image{
+  width: 100%;
+
+}
+.pokemon-card-info{
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid lightgrey;
+}
+
+.pokemon-card-type li{
+  list-style: none;
+  text-align: center;
+  display: inline-block;
+  margin: .6em;
+  padding: .3em .6em;
+  border-radius: 5px;
+}
+
+.planta{
+  background-color: #9bcc50;
+  color: white;
+}
+.veneno{
+  background-color: #b97fc9;
+  color: white;
+}
+
+.battle{
+  background-image: url(./images/battle.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  display: flex;
+  margin: 1em auto;
+  padding: 1em;
+  justify-content: space-around;
+}
+.values{
+  padding: 1em;
+  font-family: Flexo;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: white;
+  background-color: rgba(0,0,0, 0.4);
+  margin: 1em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 5px;
+
+}
+
+.history-part{
+  width: 80%;
+  margin: 1em auto;
+  padding: 1em;
+  background-color: white;
+  border-radius: 5px;
+}
+.history-part h2{
+  font-family: Flexo;
+  color: cadetblue;
+}
+.history-part p{
+  font-family: Arial, Helvetica, sans-serif;
+}
+#pokemon{
+  margin: 0 1em;
+}
