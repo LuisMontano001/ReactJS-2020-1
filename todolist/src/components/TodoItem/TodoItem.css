@@ -1,0 +1,100 @@
+.TodoItem--container{
+    display: block;
+    height: 3vw;
+    border: 1px solid gray;
+
+    background-color: gray;
+    opacity: .7;
+
+    margin-top: .5vw;
+
+    text-align: center;
+
+}
+
+.Input--button{
+    display: inline-block;
+    
+    height: 2.55vw;
+    width: 2.55vw;
+    border-radius: 1vw;
+    position: relative;
+    background-color: whitesmoke;
+
+    margin-left: 2vw;
+
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+
+    border: initial;
+}
+
+.Input--button:hover{
+    color: white;
+    
+    background-color: #652DC1;
+
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+.TodoItem--textdate{
+    display: inline-block;
+    margin-left: 2vw;
+
+    width: 10%;
+
+}
+
+.TodoItem--texttime{
+    display: inline-block;
+    margin-left: 2vw;
+
+    width: 10%;
+
+}
+
+.TodoItem--textspace{
+      display: inline-block;
+      margin-left: 2vw;
+      width: 50%;
+
+
+      text-align: initial;
+}
+
+.TodoItem--text_primary{
+    color: white;
+    font-family: mySecondFont;
+}
+
+@font-face {
+    font-family: mySecondFont;
+    src: url(../../fonts/hemi\ head\ bd\ it.ttf);
+    font-weight: bold;
+}

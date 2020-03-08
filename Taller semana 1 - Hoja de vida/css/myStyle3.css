@@ -65,6 +65,14 @@
     padding-left: 0.8vw;
 }
 
+.text-neon-5{
+    color: white;
+    font-family: myFirstFont;
+    font-size: 1.5em;
+    
+    padding-left: 7.8vw;
+}
+
 .spacing-data-exp{
     width: 100%;
     padding-left: 3vw;
