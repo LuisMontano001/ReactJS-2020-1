@@ -1,4 +1,5 @@
-body{
+/*El uso de body con css modules no me queda claro sin embargo espero que no represente un error en la implementación de css modules*/
+body{ 
 background: #000046;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -6,24 +7,43 @@ background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, F
 }
 .todolist{
 text-align: center;
+margin: auto;
+margin-top: 2%;
+border-radius: 15px;
+padding: 15px;
+border: solid;
+border-width: 2px;
+background: #D3CCE3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+height: auto;
+width: 400px;
 
 }
 
+.title{
+color: cornflowerblue;
+
+  
+}
+
 .form{
-  
-  border-radius: 5px;
-  border-color: black;
-  padding-left: 30%;
-  padding-right: 30%;
-  padding-top: 3%;
-  
+margin-top: 5%;
+margin-bottom: 5px;
 }
 
 .input{
   background-color: ghostwhite;
+  width: 250px;
+  border: 2px solid black;
+  border-radius: 5px;
+  height: 25px;
+  margin: auto;
 }
 
 .submit{
-
+height: 35px;
+border-radius: 8px;
+margin-left: 5px;
 
 }

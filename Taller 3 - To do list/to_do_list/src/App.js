@@ -59,6 +59,7 @@ render(){
     <div className={classes.todolist}>
        <header>
          <form className={classes.form} onSubmit={this.addItem}>
+           <h1 className={classes.title}>To do List</h1>
            <input className={classes.input} type="text" placeholder ="Ingresa la tarea"
            value={this.state.currentItem.text}
            onChange={this.handleInput}/>

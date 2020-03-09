@@ -1,11 +1,30 @@
 .list{
-    text-align: center;
-    border-radius: 5px;
-    border-color: black;
+display: inline-block;
+width: 350px;
+border: solid 2px black;
+border-radius: 5px;
+margin: 3px;
+}
 
+.check{
+    border-radius: 10px;
+    margin: auto;
+    margin-right: 10px;
+    width: 40px;
+    height: 20px;
+}
 
+.text{
+    
+    color:black;
+    width: auto;
+    height: 30px;
 }
 
 .delete{
-background-color: rgb(124, 84, 23);
+border-radius: 5px;
+width: 80px;
+height: 30px;
+margin-left: 20px;
+
 }

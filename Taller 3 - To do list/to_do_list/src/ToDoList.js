@@ -6,18 +6,12 @@ function ToDoList(props){
     const ToDoList = items.map(item =>
         {
             return <div className={classes.list} key={item.key}>
-                <p>
-                <span>
-                    <input type="checkbox"/>
-                </span>
-                &nbsp;
-                    {item.text}
-                &nbsp;    
-                <span>
+                <p >
+                    <input type="checkbox" className={classes.check}/>
+                    <span className={classes.text}>{item.text}</span>
+                        
                     <button className={classes.delete} onClick={ ()  => props.deleteItem(item.key)}>Eliminar</button>
-                </span>
                 </p>
-
             </div>
         }
         )
