@@ -1,26 +1,76 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import classes from './App.css';
+import ToDoList from './ToDoList'
 
-function App() {
+class App extends React.Component {
+ constructor(props){
+   super(props);
+   this.state={
+     items:[],
+     currentItem:{
+       text: '',
+       key: '',
+     }
+   }
+   this.handleInput = this.handleInput.bind(this);
+   this.addItem = this.addItem.bind(this);
+   this.deleteItem = this.deleteItem.bind(this);
+ }
+
+ handleInput(e){
+   this.setState({
+     currentItem:{
+       text: e.target.value,
+       key:Date.now()
+     }
+   })
+ }
+
+ addItem(e){
+   e.preventDefault();
+   const newItem = this.state.currentItem;
+   console.log(newItem);
+  
+   if(newItem.text!==""){
+     const newItems=[...this.state.items, newItem];
+     this.setState({
+       items:newItems,
+       currentItem:{
+         text:'',
+         key:''
+       }
+     })
+   }
+ }
+
+deleteItem(key){
+  const filteredItems = this.state.items.filter(item => item.key!==key);
+  this.setState(
+    {
+      items:filteredItems
+    }
+  )
+}
+
+render(){
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    <div className={classes.todolist}>
+       <header>
+         <form className={classes.form} onSubmit={this.addItem}>
+           <input className={classes.input} type="text" placeholder ="Ingresa la tarea"
+           value={this.state.currentItem.text}
+           onChange={this.handleInput}/>
+           <button className={classes.submit} type="submit">Añadir Tarea</button>
+         </form>
+        </header>
+        <ToDoList items ={this.state.items}
+        deleteItem ={this.deleteItem}></ToDoList>
+     </div>
+
+    );
+  }
 }
 
 export default App;
