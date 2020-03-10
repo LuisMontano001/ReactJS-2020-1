@@ -1,0 +1,9 @@
+.incompletetask{
+
+
+
+
+}
+.completetask{
+    text-decoration: line-through;
+}
