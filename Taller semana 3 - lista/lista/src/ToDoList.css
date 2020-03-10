@@ -1,11 +1,18 @@
 .list{
     text-align: center;
-    border-radius: 5px;
-    border-color: black;
+    color: white;
+    font-size: 18px;
 
 
 }
 
 .delete{
-background-color: rgb(124, 84, 23);
+  background-color: rgb(236, 16, 16);
+  color:white;
+  border-color:white;
+  height: 40px;
+  width: 60px;
+  border-radius: 5px;
+  border:0;
+
 }

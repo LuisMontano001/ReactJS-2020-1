@@ -59,10 +59,10 @@ render(){
     <div className={classes.todolist}>
        <header>
          <form className={classes.form} onSubmit={this.addItem}>
-           <input className={classes.input} type="text" placeholder ="Ingresa la tarea"
+           <input className={classes.input} type="text" placeholder ="Agregar Tarea"
            value={this.state.currentItem.text}
            onChange={this.handleInput}/>
-           <button className={classes.submit} type="submit">Añadir Tarea</button>
+           <button className={classes.submit} type="submit">Agregar</button>
          </form>
         </header>
         <ToDoList items ={this.state.items}
