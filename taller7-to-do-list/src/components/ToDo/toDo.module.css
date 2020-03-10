@@ -1,0 +1,26 @@
+.toDo {
+    margin: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toDo > * {
+    margin-right: 1rem;
+}
+
+.toDo > *:last-child {
+    margin-right: 0;
+}
+
+.toDo .deleteButton {
+    border: none;
+    background-color: lightcoral;
+    margin-left: 10rem;
+    color: white;
+    border-radius: 5px;
+}
+
+.completed {
+    text-decoration: line-through;
+}
