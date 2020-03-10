@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
@@ -35,4 +36,22 @@
   to {
     transform: rotate(360deg);
   }
+}
+*{
+    background-color: darkcyan;
+}
+.center{
+    height: 100vh;
+    width: 100vw;
+    margin-left: 30%;
+    position: absolute;
+    height: 600px;
+    width: 600px;
+    border:solid black 2px
+}
+.title{
+    text-align: center;
+}
+.button{
+  background-color: gray;
 }

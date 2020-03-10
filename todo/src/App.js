@@ -47,9 +47,9 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App" >
+      <div className="App" className="center">
         <Input content={this.state.string} onChange={this.handleChange} name="string" type="text" />
-        <button onClick={this.onClick} >Add</button>
+        <button className="button" onClick={this.onClick} >Add</button>
         <TodoList todos={this.state.todos} delete={this.handleDelete} done={this.handleDone} />
       </div>
     )

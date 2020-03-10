@@ -1,3 +1,10 @@
+*{
+    background-color: darkcyan;
+}
 .done{
     text-decoration: line-through;
+      
+}
+.button{
+    background-color: gray;
 }

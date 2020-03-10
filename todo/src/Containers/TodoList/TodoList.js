@@ -8,8 +8,8 @@ export default class TodoList extends Component {
             return (
                 <div key={index}>
                     {todo.done ? (<p className={classes.done}>{todo.to}</p>) : (<p>{todo.to}</p>)}
-                    <button onClick={() => { this.props.done(todo.id) }}>done</button>
-                    <button onClick={() => { this.props.delete(todo.id) }}>delete</button>
+                    <button onClick={() => { this.props.done(todo.id) }} className="button">done</button>
+                    <button onClick={() => { this.props.delete(todo.id) }} className="button">delete</button>
                 </div>
             );
         });
