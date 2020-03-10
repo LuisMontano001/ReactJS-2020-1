@@ -1,0 +1,26 @@
+.task {
+    margin: 0.5rem;
+    font-style: italic;
+}
+
+.task > * {
+    margin-right: 1rem;
+}
+
+.task > *:last-child {
+    margin-right: 0;
+}
+
+.task .deleteButton {
+    border: none;
+    color: red;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.taskCompleted {
+    text-decoration: line-through;
+}
