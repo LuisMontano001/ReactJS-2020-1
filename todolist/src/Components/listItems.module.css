@@ -1,0 +1,14 @@
+.listContainer{
+    width: 100%;
+}
+.list{
+    background-color: white;
+    width: 100%;
+    margin: 1em;
+    border: 1px solid gray;
+}
+.list p{
+    width: 100%;
+    padding: 1em;
+    text-align: center;
+}
