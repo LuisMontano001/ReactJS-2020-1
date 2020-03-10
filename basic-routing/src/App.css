@@ -1,26 +1,74 @@
-.main-header {
-  text-align: center;
+body{
+  background-color: #282c34;  
 }
 
-.nav-bar ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  text-align: center;
+.App {
+  background-color: black;
+  min-height: 500px;
+  width: 400px;
+  margin: 30px auto;
 }
 
-.nav-bar ul li {
-  display: inline-block;
+#to-do-form input{
+  background-color: red;
+  border: 0;   
+  width: 200px;
+  height: 50px;
+  padding: 0 20px;
   margin: 20px;
+  font-size: 20px;
+  border-radius: 20px;
+  color: aquamarine;
 }
 
-.nav-bar ul li a {
-  text-decoration: none;
-  color: blue;
+#to-do-form input::placeholder{
+  color: red;  
+}
+#to-do-form input:focus,#to-do-form input:button{
+  outline: red;
+  border-radius: 20px;
+}
+#to-do-form button{
+  height: 50px;
+  width: 80px;
+  border-radius: 20px;
+  border: 0;
+  background-color: red;
+  cursor: pointer;
+  font-weight: bolder;
+  color: aqua;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
 }
 
-.nav-bar ul li a:hover,
-.nav-bar ul li a:active {
-  color: #fa923f;
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

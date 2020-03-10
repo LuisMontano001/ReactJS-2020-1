@@ -1,120 +1,89 @@
-import React, { Component } from 'react';
-import { BrowserRouter, Route, Link} from 'react-router-dom';
-import Posts from './Components/Posts/Posts';
-import FullPost from './Components/FullPost/FullPost';
-import NewPost from './Components/NewPost/NewPost';
+import React from 'react';
+import logo from './logo.svg';
 import './App.css';
+import ListItems from './ListItems'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faTrash } from '@fortawesome/free-solid-svg-icons'
 
-class App extends Component {
-  state = {
-    posts: [
-      {
-        title: "First Title",
-        author: "Cristian",
-        content: "Lorem ipsum dolor sit amet, consectetur "+
-          "adipiscing elit, sed do eiusmod tempor incididunt "+
-          "ut labore et dolore magna aliqua. Ut enim ad minim "+
-          "veniam, quis nostrud exercitation ullamco laboris "+
-          "nisi ut aliquip ex ea commodo consequat."
-      },
-      {
-        title: "Second Title",
-        author: "Mike",
-        content: "Duis aute irure dolor in reprehenderit in "+
-        "voluptate velit esse cillum dolore eu fugiat nulla "+
-        "pariatur. Excepteur sint occaecat cupidatat non proident, "+
-        "sunt in culpa qui officia deserunt mollit anim id est laborum."
-      },
-      {
-        title: "Third Title",
-        author: "Juan",
-        content: "Sed ut perspiciatis unde omnis iste natus error "+
-        "sit voluptatem accusantium doloremque laudantium, totam rem "+
-        "aperiam, eaque ipsa quae ab illo inventore veritatis et quasi "+
-        "architecto beatae vitae dicta sunt explicabo."
-      },
-      {
-        title: "Forth Title",
-        author: "Ana",
-        content: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur "+
-        "aut odit aut fugit, sed quia consequuntur magni dolores eos qui "+
-        "ratione voluptatem sequi nesciunt."
+library.add(faTrash)
+
+class App extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      items:[],
+      currentItem:{
+        text:'',
+        key:''
       }
-    ],
-    newPostInfo: {
-      title: "",
-      author: "",
-      content: ""
+    }
+    this.addItem = this.addItem.bind(this);
+    this.handleInput = this.handleInput.bind(this);
+    this.deleteItem = this.deleteItem.bind(this);
+    this.setUpdate = this.setUpdate.bind(this);
+  }
+  addItem(e){
+    e.preventDefault();
+    const newItem = this.state.currentItem;
+    if(newItem.text !==""){
+      const items = [...this.state.items, newItem];
+    this.setState({
+      items: items,
+      currentItem:{
+        text:'',
+        key:''
+      }
+    })
     }
   }
-
-  componentShouldUpdate(nextProps, nextState) {
-    return nextState.openPostIndex !== this.state.openPostIndex;
-  }
-
-  render () {
-    return(
-      <BrowserRouter>
-        <div>
-          <header>
-            <nav className = "nav-bar">
-              <ul>
-                {/* <li><a href = "/">Home</a></li> */}
-                <li><Link to="/">Home</Link></li>
-                {/* <li><a href = "/new-post">New Post</a></li> */}
-                <li><Link to="/new-post">New Post</Link></li>
-              </ul>
-            </nav>
-          </header>
-          <h1 className = "main-header">My posts</h1>
-
-          <Route path = "/new-post" render = {() => (
-              <NewPost
-                  newPostInfo = {this.state.newPostInfo}
-                  updateNewPostData = {this.updateNewPostData}
-                  submitNewPost = {this.submitNewPost}
-              />
-          )} />
-          <Route path ="/" exact render = {() => <Posts posts = {this.state.posts} />} />
-          <Route path ="/post/:postIndex" exact render = {() => (
-              <FullPost openPost = {(postIndex) => this.openPost(postIndex)} />
-          )} />
-        </div>
-      </BrowserRouter>
-    )
-  }
-
-  openPost = (postIndex) => {
-    return this.state.posts[postIndex];
-  }
-
-  updateNewPostData = (event, type) => {
-    var updatedNewPostInfo = {
-      ...this.state.newPostInfo
-    }
-
-    updatedNewPostInfo[type] = event.target.value;
-
+  handleInput(e){
     this.setState({
-      newPostInfo: updatedNewPostInfo
-    });
-  }
-
-  submitNewPost = () => {
-    var updatedPosts = [...this.state.posts];
-    var newPostInfo = {...this.state.newPostInfo}
-
-    updatedPosts.push(newPostInfo);
-
-    this.setState({
-      posts: updatedPosts,
-      newPostInfo: {
-        title: "",
-        author: "",
-        content: ""
+      currentItem:{
+        text: e.target.value,
+        key: Date.now()
       }
     })
   }
+  deleteItem(key){
+    const filteredItems= this.state.items.filter(item =>
+      item.key!==key);
+    this.setState({
+      items: filteredItems
+    })
+
+  }
+  setUpdate(text,key){
+    console.log("items:"+this.state.items);
+    const items = this.state.items;
+    items.map(item=>{      
+      if(item.key===key){
+        console.log(item.key +"    "+key)
+        item.text= text;
+      }
+    })
+    this.setState({
+      items: items
+    })
+    
+   
+  }
+ render(){
+  return (
+    <div className="App">
+      <header>
+        <form id="to-do-form" onSubmit={this.addItem}>
+          <input type="text" placeholder="Enter task" value= {this.state.currentItem.text} onChange={this.handleInput}></input>
+          <button type="submit">Add</button>
+        </form>
+        <p>{this.state.items.text}</p>
+        
+          <ListItems items={this.state.items} deleteItem={this.deleteItem} setUpdate={this.setUpdate}/>
+        
+      </header>
+    </div>
+  );
+ }
 }
+
 
 export default App;
