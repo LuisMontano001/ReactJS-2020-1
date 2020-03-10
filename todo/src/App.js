@@ -30,11 +30,16 @@ class App extends Component {
       todos: array
     });
   }
+
   handleDone = id => {
-    let todo = this.state.todos.find(item => item.id === id);
-    todo.done = true;
-    let array = this.state.todos.filter(item => item.id !== id);
-    array.push(todo);
+    let array = this.state.todos.map(item => {
+      if (item.id === id) {
+        item.done = !item.done;
+        return item;
+      } else {
+        return item;
+      }
+    });
     this.setState({
       todos: array
     });
