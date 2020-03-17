@@ -19,9 +19,6 @@ const App= () =>{
         <Router>
         <NavBar></NavBar>
           <Switch>
-            <Route path="/trashcan">
-                <h1>trashcan</h1>
-            </Route>
             <Route path="/done">
                 <Done doneToToDo={doneToToDo} done={done} setDone={setDone}></Done>
             </Route>

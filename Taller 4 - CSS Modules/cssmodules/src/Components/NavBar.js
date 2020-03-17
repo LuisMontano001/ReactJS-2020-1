@@ -6,7 +6,6 @@ function NavBar(){
             <div className={style.NavBar}>
                 <Link to="/">To Do</Link>
                 <Link to="/done">Done</Link>
-                <Link to="/trashcan">Trash Can</Link>
             </div>       
     )
 }
