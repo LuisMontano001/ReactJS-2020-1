@@ -1,0 +1,16 @@
+.addDiv{
+    width: 100%;
+    margin-top: 40px;
+}
+.mainDiv{
+    width: 80%;
+    background-color: whitesmoke;
+    margin-left: 10%;
+    margin-right: 10%;
+    position: absolute;
+    height: 100vw;
+    margin-top: 40px;
+}
+.taskDiv{
+    width: 100%;
+}
