@@ -34,12 +34,21 @@ handleClick=(e)=>{
         }
     })
 }
-/*handleDone=(e)=>{
-   
+handleDone=(index)=>{
+   var updatedTasks = [...this.state.tasks]
+   var modifiedTask = updatedTasks.splice(index,1)
+   modifiedTask[0].done = true
+   updatedTasks[index] = {
+       ...updatedTasks[index],
+       ...modifiedTask[0]
+   }
     this.setState({
-
-
-    })}*/
+        tasks: updatedTasks
+    }
+    )
+   /* console.log(modifiedTask)
+    console.log(updatedTasks)*/
+}
 
 
 
@@ -50,7 +59,7 @@ handleClick=(e)=>{
         <input type="text" onChange={this.handleChange} value={this.state.task.text}></input>
         <button onClick={this.handleClick}>Add</button>
         
-        {this.state.tasks?this.state.tasks.map((t1,index)=><Task task={t1} key={index}> </Task>):console.log("no hay tareas")}
+        {this.state.tasks?this.state.tasks.map((t1,index)=><Task task={t1} handleDone={this.handleDone}key={index} index={index}> </Task>):console.log("no hay tareas")}
         {console.log(this.state.tasks)}
 
 
