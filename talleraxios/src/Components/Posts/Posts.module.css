@@ -1,0 +1,11 @@
+body{
+    background-color: #885CFF;
+}
+
+.posts{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}

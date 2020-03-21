@@ -1,0 +1,52 @@
+[
+    {
+      "id": 1,
+      "title": "LA CURA EN UN MINUTO",
+      "author": "Madison Cavanaugh"
+    },
+    {
+      "id": 2,
+      "title": "UNA SIRENA EN PARÍS",
+      "author": "Mathias Malzieu"
+    },
+    {
+      "id": 3,
+      "title": "LA ISLA DE LAS MUJERES DEL MAR",
+      "author": "Lisa See"
+    },
+    {
+      "id": 4,
+      "title": "EL DÍA QUE DIOS ENTRÓ AL BANCO",
+      "author": "Juan Diego Gómez Gómez"
+    },
+    {
+      "id": 5,
+      "title": "CONSPIRACIÓN",
+      "author": "Juan Jesús Vallejo"
+    },
+    {
+      "id": 6,
+      "title": "Y JULIA RETÓ A LOS DIOSES",
+      "author": " Santiago Posteguillo"
+    },
+    {
+      "id": 7,
+      "title": "ORGULLO Y PREJUICIO",
+      "author": "Jane Austen"
+    },
+    {
+      "id": 8,
+      "title": "EL TIEMPO DE LAS AMAZONAS",
+      "author": " Marvel Moreno"
+    },
+    {
+      "id": 9,
+      "title": "LA PSICÓLOGA",
+      "author": "Helene Flood"
+    },
+    {
+      "id": 10,
+      "title": "LO QUE ELLA DEJÓ",
+      "author": "T.R. Richmond"
+    }
+]
