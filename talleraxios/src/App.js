@@ -20,6 +20,7 @@ class App extends Component {
 
         const updatedPosts = posts.map(post => {
           return {
+            id: post.id,
             title: post.title,
             author: post.author,
             year: post.year
