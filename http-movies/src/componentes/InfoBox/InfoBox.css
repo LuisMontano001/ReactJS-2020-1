@@ -1,0 +1,19 @@
+.box{
+    position: absolute;
+    height: 10vw;
+    width: 10vw;
+    border-radius: 3px;
+    background-color: blue;
+    
+    left: 2vw;
+    top: 1vw;
+
+    z-index: 2;
+
+    padding-top: .5vw;
+    padding-left: .5vw;
+    font-family: fantasy;
+    color: white;
+    font-size: .5em;
+}
+

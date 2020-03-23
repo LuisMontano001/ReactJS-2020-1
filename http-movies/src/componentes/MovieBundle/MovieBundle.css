@@ -1,0 +1,18 @@
+.movie-bundle{
+    display: inline-block;
+    position: relative;
+    width: 15vw;
+    height: 22vw;
+
+    margin-left: 5vw;
+}
+
+.movie-bundle:hover {
+    animation: 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+    transform: scale(1.1);
+  }
+  
+

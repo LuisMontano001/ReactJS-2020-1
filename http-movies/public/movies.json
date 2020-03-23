@@ -1,0 +1,26 @@
+[
+   {
+      "movieID":1,
+      "title":"The Terminator",
+      "category":"Fantasy/Scifi",
+      "director":"Tim Miller",
+      "year":"1984",
+      "thumbnail":"https://upload.wikimedia.org/wikipedia/en/thumb/5/5f/Terminator_Dark_Fate_poster.jpg/220px-Terminator_Dark_Fate_poster.jpg"
+   },
+   {
+      "movieID":2,
+      "title":"Pandemic",
+      "category":"Scifi/Action",
+      "director":"Jhon Suits",
+      "year":"2016",
+      "thumbnail":"https://upload.wikimedia.org/wikipedia/en/d/de/Pandemic_Poster.jpg"
+   },
+   {
+      "movieID":3,
+      "title":"Sharknado",
+      "category":"Action/Adventure/Comedy",
+      "director":"Anthony C. Ferrante",
+      "year":"2013",
+      "thumbnail":"https://upload.wikimedia.org/wikipedia/en/9/93/Sharknado_poster.jpg"
+   }
+]
