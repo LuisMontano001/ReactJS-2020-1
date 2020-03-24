@@ -18,6 +18,8 @@ class User extends Component{
     render(){
         return(
             <div className="tarjet">
+                
+        <h1 className="titulo">Peticion HTTP a json</h1>
                 <ul className="taarjet">
                 {this.state.users.map(user => (
                 <li key={user.id} className="list">

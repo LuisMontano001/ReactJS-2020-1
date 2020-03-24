@@ -13,8 +13,11 @@
     border-color: black;
     border: black;
     border-style: solid;
-    
+}
 
+.titulo{
+    text-decoration: underline;
+    margin: 30px;
 }
 
 .taarjet{

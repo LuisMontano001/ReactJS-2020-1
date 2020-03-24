@@ -13,7 +13,7 @@ class App extends Component {
 
     return (
       <div className="Workplace">
-        <h1 className="Titulo">Peticion HTTP a json</h1>
+        <h1>Trabajo por: Cristian Alvarado</h1>
         <User/>
 
       </div>

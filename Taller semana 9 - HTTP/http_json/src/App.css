@@ -1,13 +1,8 @@
-.Workplace{
+*{
   margin: auto;
-  position: center;
-  padding: 20px;
-  
 }
-.Titulo{
-  margin: 100px;
+
+.Workplace{
   position: center;
-  text-decoration: underline;
-  text-decoration-color: chocolate;
-  color: orange;
+
 }
