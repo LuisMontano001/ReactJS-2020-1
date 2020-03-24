@@ -12,26 +12,29 @@ componentDidMount () {
 }
 
 
-
+maximo =25;
 render () {
 
     return (
-      <div>
+      <div className ="todos">
         <h1>Posts</h1>
-        <h2>{ this.state.text }</h2>
-        <div class="card">
+        <h1>Samuel Sanabria</h1>
           {this.state.todos.map(todo => (
+                          
             <li key={todo.id}>
-             <h3>Post</h3> 
-             <div>
-             { todo.id }
+  
+             <div className="card">
+             <h3>Post: { todo.id }</h3> 
               { todo.title }
-              { todo.completed }
+              <br/>
+              { todo.completed.toString() }
              </div>
+                
+
 
             </li>
           ))}
-        </div>
+        
       </div>
     )
   }

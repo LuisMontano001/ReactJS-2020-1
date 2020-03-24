@@ -1,9 +1,20 @@
-*{
-    align-items: center;
+
+.todos{
+text-align: center;
+align-items: center;
+  border-style: solid;
+margin-left: 35%;
+margin-right: 35%;
 }
 
+.card{
+border-style: solid;
+}
 h1{
 color: black;
 
 }
 
+h3{
+    color: rgb(48, 37, 37);
+}
