@@ -1,0 +1,27 @@
+*{
+    object-position: center;
+}
+.tarjet{
+    position: center;
+    text-align: center; 
+  margin: 16px;
+  padding: 16px;
+  
+}
+
+.list{
+    border-color: black;
+    border: black;
+    border-style: solid;
+    
+
+}
+
+.taarjet{
+    border-color: black;
+    background-color: orange;  
+    border-style: solid;
+    width: 600px;
+    position: center;
+    
+}
