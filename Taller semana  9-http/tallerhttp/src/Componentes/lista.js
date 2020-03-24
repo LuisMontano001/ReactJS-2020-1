@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import styles from './lista.modules.css';
 
 class lista extends Component {
   state = {
@@ -11,14 +12,12 @@ class lista extends Component {
       .then(res => res.json())
       .then(users => this.setState({ users, cargando: false }))
       .catch(error => {
-        // Manejo del error
+        alert('Error cargue de nuevo la pagina.');
       })
   }
 
   render () {
-    if (this.state.cargando) {
-      return <h1>Cargando...</h1>
-    }
+   
 
     return (
       <div>
@@ -27,11 +26,14 @@ class lista extends Component {
         <ul>
           {this.state.users.map(user => (
             <li key={user.id}>
-              Usuario:
+              <p className={styles.titulo}>Usuario<br></br></p>
+              <p> Nombre: </p>
               { user.name }
+              <p> Correo: </p>
               { user.email }
+              <p> Telefonó: </p>
               { user.phone }
-              --------------------------------
+              
             </li>
           ))}
         </ul>
