@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "Name": "Samsung Galaxy S8"        
+    },
+    {
+        "id": 2,
+        "Name": "OnePlus One"        
+    },
+    {
+        "id": 3,
+        "Name": "Xiaomi Redmi K20"        
+    },
+    {
+        "id": 4,
+        "Name": "Sony Xperia XZ"        
+    },
+    {
+        "id": 5,
+        "Name": "Google Pixel 4 XL"        
+    },
+    {
+        "id": 6,
+        "Name": "Huawei Mate 30 Pro"        
+    },
+    {
+        "id": 7,
+        "Name": "Xiaomi Redmi Note 8"        
+    },
+    {
+        "id": 8,
+        "Name": "iPhone XR"        
+    },
+    {
+        "id": 9,
+        "Name": "Huawei Nexus 6P"        
+    },
+    {
+        "id": 10,
+        "Name": "LG Nexus 5X"        
+    }
+]
